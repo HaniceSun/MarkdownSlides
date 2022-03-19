@@ -28,6 +28,8 @@ footer: Stanford University
 <!-- _class: lead -->
 # Test Markdown slides
 
+-----
+
 Hanice Sun
 
 # Bright future ahead
