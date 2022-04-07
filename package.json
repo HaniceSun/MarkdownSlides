@@ -6,7 +6,7 @@
   "private": true,
   "scripts": {
     "build": "rimraf dist && npm run -s deck",
-    "deck": "marp --no-stdin projects/test/test.md -o dist/test/index.html && marp --no-stdin projects/test2/test.md -o dist/test2/index.html",
+    "deck": "marp --no-stdin projects/test/test.md -o dist/test/index.html && ncp assets dist/test/assets && marp --no-stdin projects/test2/test.md -o dist/test2/index.html && ncp assets dist/test2/assets",
     "now-build": "npm run -s deck",
   },
   "devDependencies": {
