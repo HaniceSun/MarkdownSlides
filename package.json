@@ -8,7 +8,7 @@
     "build": "rimraf dist && npm run -s og-image && npm run -s deck",
     "deck": "marp --no-stdin projects/test/test.md -o dist/test/index.html && ncp assets dist/test/assets",
     "now-build": "npm run -s deck",
-    "og-image": "marp PITCHME.md -o dist/test/og-image.jpg",
+    "og-image": "marp projects/test/test.md -o dist/test/og-image.jpg",
     "start": "marp -ps ."
   },
   "devDependencies": {
