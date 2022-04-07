@@ -5,11 +5,9 @@
   "license": "WTFPL",
   "private": true,
   "scripts": {
-    "build": "rimraf dist && npm run -s og-image && npm run -s deck",
-    "deck": "marp --no-stdin projects/test/test.md -o dist/test/index.html && ncp assets dist/test/assets",
+    "build": "rimraf dist && npm run -s deck",
+    "deck": "marp --no-stdin projects/test/test.md -o dist/test/index.html && marp --no-stdin projects/test2/test.md -o dist/test2/index.html",
     "now-build": "npm run -s deck",
-    "og-image": "marp projects/test/test.md -o dist/test/og-image.jpg",
-    "start": "marp -ps ."
   },
   "devDependencies": {
     "@marp-team/marp-cli": "^1.7.0",
